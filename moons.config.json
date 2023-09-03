@@ -1,0 +1,9 @@
+{
+  "template": "",
+  "locales": {
+    "default": "en",
+    "available": [
+      "en"
+    ]
+  }
+}

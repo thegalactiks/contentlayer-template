@@ -1,0 +1,16 @@
+{
+  "name": "@withmoons/files-content-template",
+  "version": "0.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "build": "contentlayer build"
+  },
+  "dependencies": {
+    "@withmoons/explorer": "0.1.0",
+    "contentlayer": "0.3.4"
+  },
+  "devDependencies": {
+    "react": "18.2.0"
+  }
+}
