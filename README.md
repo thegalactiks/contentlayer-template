@@ -1,0 +1,1 @@
+# files-content-template
