@@ -9,7 +9,7 @@ import {
   ContentLayerOrganizationFields,
   ContentLayerPageFields,
   ContentLayerPersonFields
-} from '@withmoons/explorer'
+} from '@galactiks/explorer'
 
 const Article = defineDocumentType(() => ({
   ...ContentLayerArticleFields,

@@ -1,5 +1,5 @@
 {
-  "name": "@withmoons/files-content-template",
+  "name": "@thegalactiks/contentlayer-template",
   "version": "0.0.0",
   "description": "",
   "private": "true",
@@ -7,10 +7,11 @@
     "build": "contentlayer build"
   },
   "dependencies": {
-    "@withmoons/explorer": "0.1.0",
+    "@galactiks/explorer": "0.2.0",
     "contentlayer": "0.3.4"
   },
   "devDependencies": {
-    "react": "18.2.0"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
