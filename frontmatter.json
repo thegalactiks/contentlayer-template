@@ -1,0 +1,66 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.git.enabled": true,
+  "frontMatter.framework.id": "galactiks",
+  "frontMatter.content.publicFolder": "./assets",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pages",
+      "path": "[[workspace]]/content/pages"
+    },
+    {
+      "title": "articles",
+      "path": "[[workspace]]/content/articles"
+    },
+    {
+      "title": "persons",
+      "path": "[[workspace]]/content/persons"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "previewPath": null,
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "name",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Tags",
+          "name": "keywords",
+          "type": "tags"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "dateCreated",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        }
+        {
+          "title": "Last Modified date",
+          "name": "dateModified",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isModifiedDate": true
+        }
+      ]
+    }
+  ]
+}
