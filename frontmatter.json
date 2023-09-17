@@ -2,6 +2,7 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.git.enabled": true,
   "frontMatter.framework.id": "galactiks",
+  "frontMatter.taxonomy.alignFilename": true,
   "frontMatter.content.publicFolder": "./assets",
   "frontMatter.content.pageFolders": [
     {
@@ -36,30 +37,75 @@
           "type": "string"
         },
         {
-          "title": "Tags",
-          "name": "keywords",
-          "type": "tags"
-        },
-        {
-          "title": "Slug",
-          "name": "slug",
+          "title": "identifier",
+          "name": "identifier",
           "type": "string",
           "single": true
         },
         {
-          "title": "Publishing date",
+          "title": "Is Part Of",
+          "name": "isPartOf",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Keywords",
+          "name": "keywords",
+          "type": "tags"
+        },
+        {
+          "title": "Image",
+          "type": "fields",
+          "name": "image",
+          "fields": [
+            {
+              "title": "Name",
+              "name": "name",
+              "type": "string",
+              "single": true
+            },
+            {
+              "title": "URL",
+              "name": "contentUrl",
+              "type": "image"
+            }
+          ]
+        },
+        {
+          "title": "Creation date",
           "name": "dateCreated",
           "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        }
+          "default": "{{now}}"
+        },
         {
           "title": "Last Modified date",
           "name": "dateModified",
           "type": "datetime",
           "default": "{{now}}",
           "isModifiedDate": true
-        }
+        },
+        {
+          "title": "Publishing date",
+          "name": "datePublished",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "name": "divider",
+          "type": "divider"
+        },
+        {
+          "title": "Optional Fields",
+          "type": "heading"
+        },
+        {
+          "title": "URL",
+          "name": "url",
+          "type": "string",
+          "required": false,
+          "single": true
+        },
       ]
     }
   ]
