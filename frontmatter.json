@@ -1,8 +1,9 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.extends": [
+    "https://galactiks.com/frontmatter/galactiks.json"
+  ],
   "frontMatter.git.enabled": true,
-  "frontMatter.framework.id": "galactiks",
-  "frontMatter.taxonomy.alignFilename": true,
   "frontMatter.content.publicFolder": "./assets",
   "frontMatter.content.pageFolders": [
     {
@@ -16,97 +17,6 @@
     {
       "title": "persons",
       "path": "[[workspace]]/content/persons"
-    }
-  ],
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "name": "default",
-      "previewPath": null,
-      "pageBundle": false,
-      "filePrefix": null,
-      "fields": [
-        {
-          "title": "Title",
-          "name": "name",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "identifier",
-          "name": "identifier",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Is Part Of",
-          "name": "isPartOf",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Keywords",
-          "name": "keywords",
-          "type": "tags"
-        },
-        {
-          "title": "Image",
-          "type": "fields",
-          "name": "image",
-          "fields": [
-            {
-              "title": "Name",
-              "name": "name",
-              "type": "string",
-              "single": true
-            },
-            {
-              "title": "URL",
-              "name": "contentUrl",
-              "type": "image"
-            }
-          ]
-        },
-        {
-          "title": "Creation date",
-          "name": "dateCreated",
-          "type": "datetime",
-          "default": "{{now}}"
-        },
-        {
-          "title": "Last Modified date",
-          "name": "dateModified",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Publishing date",
-          "name": "datePublished",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "name": "divider",
-          "type": "divider"
-        },
-        {
-          "title": "Optional Fields",
-          "type": "heading"
-        },
-        {
-          "title": "URL",
-          "name": "url",
-          "type": "string",
-          "required": false,
-          "single": true
-        },
-      ]
     }
   ]
 }
