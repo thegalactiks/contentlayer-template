@@ -1,8 +1,17 @@
 {
-  "name": "@thegalactiks/contentlayer-template",
+  "name": "@galactiks/contentlayer-template",
   "version": "0.0.0",
-  "description": "",
+  "description": "Contentlayer repository template for Galactiks project.",
   "private": "true",
+  "homepage": "https://www.galactiks.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegalactiks/contentlayer-template.git"
+  },
+  "keywords": [
+    "contentlayer",
+    "cms"
+  ],
   "scripts": {
     "build": "contentlayer build",
     "lint": "eslint . --ext mdx --cache"
