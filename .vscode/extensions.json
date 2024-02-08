@@ -1,7 +1,5 @@
 {
     "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "eliostruyf.vscode-front-matter",
-        "esbenp.prettier-vscode"
+        "galactiks.galactiks-extension-pack"
     ]
 }
