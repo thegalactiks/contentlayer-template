@@ -4,9 +4,10 @@ import {
   PageDocumentType,
   PersonDocumentType,
   PlaceDocumentType,
+  ProductDocumentType,
   WebsiteDocumentType,
   WebpageElementDocumentType,
-} from '@galactiks/contentlayer/configs'
+} from '@galactiks/contentlayer'
 import { makeSource } from 'contentlayer/source-files';
 
 const contentLayerConfig = makeSource({
@@ -17,6 +18,7 @@ const contentLayerConfig = makeSource({
     PageDocumentType,
     PersonDocumentType,
     PlaceDocumentType,
+    ProductDocumentType,
     WebsiteDocumentType,
     WebpageElementDocumentType,
   ],

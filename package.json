@@ -17,7 +17,7 @@
     "lint": "eslint . --ext mdx --cache"
   },
   "dependencies": {
-    "@galactiks/contentlayer": "0.1.8",
+    "@galactiks/contentlayer": "0.2.0",
     "contentlayer": "0.3.4"
   },
   "devDependencies": {
