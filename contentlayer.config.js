@@ -6,7 +6,7 @@ import {
   PlaceDocumentType,
   WebsiteDocumentType,
   WebpageElementDocumentType,
-} from '@galactiks/contentlayer/configs'
+} from '@galactiks/contentlayer'
 import { makeSource } from 'contentlayer/source-files';
 
 const contentLayerConfig = makeSource({
