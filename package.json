@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@galactiks/contentlayer": "0.2.7",
-    "contentlayer": "0.3.4"
+    "contentlayer": "0.3.4",
+    "remark-gfm": "3.0.1"
   },
   "devDependencies": {
     "eslint": "8.57.0",

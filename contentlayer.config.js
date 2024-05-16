@@ -9,6 +9,7 @@ import {
   WebpageElementDocumentType,
 } from '@galactiks/contentlayer'
 import { makeSource } from 'contentlayer/source-files';
+import remarkGfm from 'remark-gfm';
 
 const contentLayerConfig = makeSource({
   contentDirPath: 'content',
@@ -22,7 +23,9 @@ const contentLayerConfig = makeSource({
     WebsiteDocumentType,
     WebpageElementDocumentType,
   ],
-  mdx: {},
+  mdx: {
+    remarkPlugins: [remarkGfm],
+  },
   disableImportAliasWarning: true,
 })
 
