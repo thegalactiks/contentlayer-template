@@ -10,6 +10,8 @@ import {
 } from '@galactiks/contentlayer'
 import { makeSource } from 'contentlayer/source-files';
 import remarkGfm from 'remark-gfm';
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypeSlug from 'rehype-slug';
 
 const contentLayerConfig = makeSource({
   contentDirPath: 'content',
@@ -24,7 +26,13 @@ const contentLayerConfig = makeSource({
     WebpageElementDocumentType,
   ],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [
+      remarkGfm,
+    ],
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypeExternalLinks, { rel: ['noopener', 'noreferrer', 'nofollow'] }],
+    ],
   },
   disableImportAliasWarning: true,
 })

@@ -19,6 +19,8 @@
   "dependencies": {
     "@galactiks/contentlayer": "0.2.7",
     "contentlayer": "0.3.4",
+    "rehype-external-links": "2.1.0",
+    "rehype-slug": "5.1.0",
     "remark-gfm": "3.0.1"
   },
   "devDependencies": {
